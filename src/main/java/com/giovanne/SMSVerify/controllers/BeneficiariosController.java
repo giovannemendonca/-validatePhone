@@ -16,7 +16,7 @@ public class BeneficiariosController {
 
     @PostMapping("/validacao/sms/{telefone}")
     public String solicitarValidacaoSms(@PathVariable String telefone) {
-        return validacaoTelefoneService.solicitarValidacaoSms(telefone);
+        return validacaoTelefoneService.solicitarValidacaoTelefone(telefone);
     }
 
     @GetMapping("/confirmacao-telefone/sms/{hash}")
